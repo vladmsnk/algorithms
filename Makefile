@@ -1,6 +1,6 @@
-SRCS = lists.cpp main.cpp reverse_list.cpp
+SRCS = srcs/lists.cpp srcs/main.cpp tasks/reverse_list.cpp
 
-HEADERS = listf.h
+HEADERS = includes/listf.h
 
 CFLAGS = -Wall -Werror -Wextra 
 
