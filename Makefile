@@ -1,4 +1,4 @@
-SRCS = srcs/lists.cpp srcs/main.cpp tasks/reverse_list.cpp
+SRCS = srcs/lists.cpp srcs/main.cpp tasks/rotate.cpp
 
 HEADERS = includes/listf.h
 
@@ -9,7 +9,7 @@ CC = g++
 all : output
 
 output :
-		${CC} ${CFLAGS} ${HEADERS} ${SRCS} -o output
+		${CC}  ${HEADERS} ${SRCS} -o output
 
 clean :
 		rm -rf output *.gch

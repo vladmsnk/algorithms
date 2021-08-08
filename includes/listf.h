@@ -5,16 +5,19 @@
 
 using namespace std;
 
-class Node
+struct Node
 {
-    public:
-        int val;
-        Node *next;
+    int val;
+    Node *next;
+    Node() : val(0), next(nullptr) {}
+    Node(int x) : val(x), next(nullptr) {}
+    Node(int x, Node *next) : val(x), next(next) {}
 };
 
 Node   *init(int val);
 void    pushBack(Node **head, int val);
 void    printList(Node *head);
+
 
 
 #endif
