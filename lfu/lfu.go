@@ -1,1 +1,4 @@
 package lfu
+
+func main() {
+}
