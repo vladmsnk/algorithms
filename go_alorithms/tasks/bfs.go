@@ -31,6 +31,7 @@ func levelOrder(root *TreeNode) [][]int {
 			front := queue.Front()
 			enqueued := queue.Remove(front).(*TreeNode)
 			if enqueued != nil {
+
 				levelRes = append(levelRes, enqueued.Val)
 				queue.PushBack(enqueued.Left)
 				queue.PushBack(enqueued.Right)
