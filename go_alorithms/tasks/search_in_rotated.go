@@ -7,7 +7,6 @@ func search(nums []int, target int) int {
 	for l < r {
 		mid = l + (r-l)/2
 
-		//simple binary search
 		if nums[l] <= nums[r] {
 			if target > nums[mid] {
 				l = mid + 1
@@ -23,7 +22,6 @@ func search(nums []int, target int) int {
 			} else {
 				r = mid
 			}
-
 		} else if nums[l] <= nums[mid] {
 			if nums[l] <= target && target <= nums[mid] {
 				r = mid
